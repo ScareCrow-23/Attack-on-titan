@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Tilt+Neon&display=swap');
+/* font-family: 'Gabarito', sans-serif;
+font-family: 'Tilt Neon', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    height: 100vh;
+    width: 100%;
+    /* background-color: crimson; */
+}
+#back{
+    height: 100vh;
+    width: 100%;
+}
+#back img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    /* background-color: #999; */
+}
+#workingarea{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80%;
+    height: 100vh;
+    /* background-color: #999; */
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 0;
+    /* background-color: cadetblue; */
+}
+#nav img{
+    height: 50px;
+}
+#nleft, #nright{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#nav a{
+    pointer-events: all;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Tilt Neon', sans-serif;
+}
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: black; */
+}
+#heroleft{
+    min-width: 50%;
+    /* background-color: cyan;     */
+}
+#heroleft .elem{
+    position: relative;
+    height: 7vw;
+    overflow: hidden;
+    /* background-color: red; */
+}
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+#heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: 'Gabarito', sans-serif;
+    color: black;
+    font-size: 6vw;
+}
+#heroleft button{
+    pointer-events: all;
+    padding: 0.8vw 1.2vw;
+    font-size: 1.4vw;
+    font-family: 'Gabarito', sans-serif;
+    margin-top: 2vw;
+    cursor: pointer;
+}
+#heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'Gabarito', sans-serif;
+    width: 20%;
+    color: black; 
+}
+#heroright p{
+    text-align: right;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+#heroright #imagediv{
+    width: 100%;
+    height: 150px;
+    background-image: url(/images/Eren-small.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+}
