@@ -25,6 +25,7 @@ html,body{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    position: static;
 }
 #top{
     pointer-events: none;
@@ -45,10 +46,21 @@ html,body{
 }
 #nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     width: 100%;
+    gap: 20px;
     padding: 40px 0;
     /* background-color: cadetblue; */
+    position: absolute;
+    z-index: 99;
+}
+#style-select{
+    z-index: 99;
+    padding: 10px 20px;
+    margin-left: 30px;
+}
+#debug-panel{
+    z-index: 99;
 }
 #nav img{
     height: 50px;
